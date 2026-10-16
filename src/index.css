@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --color-midnight-purple: #160D35;
+    --color-deep-violet: #39216D;
+    --color-royal-purple: #6545D9;
+    --color-soft-violet: #A58BFF;
+    --color-pale-lavender: #EAE3FF;
+    --color-soft-bg: #FAF9FF;
+    --color-primary-text: #181326;
+    --color-secondary-text: #625C71;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FFFFFF;
+    color: #181326;
+  }
+}
+
+.font-editorial {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: inherit;
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Luminous, smooth purple-to-white hero gradient — NO grid, NO noise */
+.hero-gradient {
+  background: linear-gradient(
+    180deg,
+    #1E0D3D 0%,
+    #321A6B 22%,
+    #5336AA 42%,
+    #8667E8 62%,
+    #C8BDFC 82%,
+    #FAF9FF 96%,
+    #FFFFFF 100%
+  );
+}
+
+/* Closing CTA gradient */
+.cta-gradient {
+  background: linear-gradient(
+    180deg,
+    #1E0D3D 0%,
+    #39216D 40%,
+    #5839B8 75%,
+    #7B5BE6 100%
+  );
+}
+
+/* Clean minimal scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9FF;
+}
+::-webkit-scrollbar-thumb {
+  background: #DAD2FF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A58BFF;
+}
